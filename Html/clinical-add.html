@@ -1,0 +1,160 @@
+<html>
+	<head>
+		<title>Clinical Annotation > Add - ATiM</title>
+		<link type="text/css" rel="stylesheet" href="../Css/style2.css" />
+	</head>
+	
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="../Img/logo_ctrnet_blue.jpg" />
+			</div>
+			<div class="title">
+				<b>ATiM - Advanced Tissue Management</b>
+			</div>
+		</div>
+		
+		<div class="nav">
+			<div class="menu">
+				<ul>
+					<li><span><a href="clinical.html">Clinical Annotation</a></span></li>
+					<li><a href="inventory.html">Inventory Management</a></li>
+					<li><a href="query.html">Query Tool +</a>
+						<ul>
+							<li><a href="browser.html">Data Browser</a></li>
+							<li><a href="sets.html">Batch Sets</a></li>
+							<li><a href="reports.html">Reports</a></li>
+						</ul>
+					</li>
+					<li><a href="tools.html">Tools +</a>
+						<ul>
+							<li><a href="admin.html">Administration</a></li>
+							<li><a href="drugs.html">Drug Administration</a></li>
+							<li><a href="orders.html">Order Management</a></li>
+							<li><a href="protocols.html">Protocols</a></li>
+							<li><a href="sop.html">Standard Operating Procedures</a></li>
+							<li><a href="storage.html">Storage Layout</a></li>
+							<li><a href="sp.html">Study & Project</a></li>
+							<li><a href="collection.html">Collection Template</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="icons">
+				<a href="profile.html"><img src="../Img/user.jpg" title="My Profile"/></a>
+				<a href="preferences.html"><img src="../Img/settings.jpg" 
+					title="Preferences" /></a>
+				<a href="index.html"><img src="../Img/logout.jpg" title="logout" /></a>
+			</div>
+		</div>
+		
+		<div class="container">
+			<h1><a href="query.html">Clinical Annototation</a> > Add Participant</h1>
+			<br>
+			
+			<table style="width: 100%" id="ptr">
+				<tr>
+					<th colspan="2" style="background-color:white; font-size:16px;
+						text-align:center; border-bottom: 1px solid rgb(40,40,40);">
+						Demographics</th>
+					<td>&nbsp;</td>
+					<th colspan="2" style="background-color:white; font-size:16px; 
+						text-align:center; border-bottom: 1px solid rgb(40,40,40);">
+						Current Status</th>
+				</tr>
+				<tr>
+					<th>Participant Identifier</th>
+					<td><input name="id"></td>
+					<td>&nbsp;</td>
+					<th>Status</th>
+					<td><input name="stat"></td>
+				</tr>
+				<tr>
+					<th>Title</th>
+					<td><select name="title">
+						<option></option><option value="ms">Ms.</option>
+						<option value="mrs">Mrs.</option><option value="mr">Mr.</option>
+					</select></td>
+					<td>&nbsp;</td>
+					<th style="background-color:white; text-align: center; 
+						font-style: italic">//if deceased
+					</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>First Name</th><td><input name="first"></td>
+					<td>&nbsp;</td>
+					<th>Date of Death</th>
+					<td><input type="date"></td>
+				</tr>
+				<tr>
+					<th>Middle Name</th><td><input name="middle"></td>
+					<td>&nbsp;</td>
+					<th>Cause of Death</th>
+					<td><input name="cause"></td>
+				</tr>
+				<tr>
+					<th>Last Name</th><td><input name="last"></td>
+					<td>&nbsp;</td>
+					<th>Secondary Cause of Death</th>
+					<td><input name="cause2"></td>
+				</tr>
+				<tr>
+					<th>Date of Birth</th><td><input type="date"></td>
+					<td>&nbsp;</td>
+					<th>Confirmation Source</th>
+					<td><input name="source"></td>
+				</tr>
+				<tr>
+					<th>Race</th><td><input name="race"></td>
+				</tr>
+				<tr>
+					<th>Sex</th>
+					<td><select name="sex"><option></option>
+						<option value="f">female</option><option value="m">male</option>
+					</td>
+				</tr>
+				<tr>
+					<th>Marital Status</th>
+					<td><select name="status"><option></option>
+						<option value="sin">single</option>
+						<option value="mar">married</option>
+						<option value="sep">separated</option>
+						<option value="div">divorced</option>
+					</select></td>
+				</tr>
+				<tr>
+					<th>Language Preferred</th><td><input name="lang"></td>
+				</tr>
+				<tr>
+					<th>Last Chart Checked Date</th><td><input type="date"></td>
+				</tr>
+				<tr>
+					<th>Notes</th><td><textarea name="thonors" rows="5" cols="25">
+					</textarea></td>
+					<td>
+					<td colspan="2" style="text-align: center;">
+					<div id="button">
+						<ol style="width: auto;">
+							<li><a href="clinical.html">Cancel</a></li>
+							<li><a href="#">Submit</a></li></td>
+						</ol>
+					</div>
+					</td>
+				</tr>
+			</table>
+			
+			<br>
+		</div>
+		
+		<div class="footer-cont">
+			<div class="footer">
+				<p>Copyright (c) 2015 <a href="http://www.ctrnet.com">
+					Canadian Tumour Repository Network</a><br>2.6.3
+				</p>
+			</div>
+		</div>
+		
+	</body>
+</html>

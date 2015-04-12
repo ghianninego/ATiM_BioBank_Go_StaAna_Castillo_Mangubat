@@ -1,0 +1,198 @@
+<html>
+	<head>
+		<title>Clinical Annotation > Search - ATiM</title>
+		<link type="text/css" rel="stylesheet" href="../Css/style2.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+		</script>
+		<script> 
+			$(document).ready(function(){
+					$("#choice1").click(function(){
+							$("#tab1").slideToggle("slow");
+					});
+					
+					$("#choice2").click(function(){
+							$("#tab2").slideToggle("slow");
+					});
+					
+					$("#choice3").click(function(){
+							$("#tab3").slideToggle("slow");
+					});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="../Img/logo_ctrnet_blue.jpg" />
+			</div>
+			<div class="title">
+				<b>ATiM - Advanced Tissue Management</b>
+			</div>
+		</div>
+		
+		<div class="nav">
+			<div class="menu">
+				<ul>
+					<li><span><a href="clinical.html">Clinical Annotation</a></span></li>
+					<li><a href="inventory.html">Inventory Management</a></li>
+					<li><a href="query.html">Query Tool +</a>
+						<ul>
+							<li><a href="browser.html">Data Browser</a></li>
+							<li><a href="sets.html">Batch Sets</a></li>
+							<li><a href="reports.html">Reports</a></li>
+						</ul>
+					</li>
+					<li><a href="tools.html">Tools +</a>
+						<ul>
+							<li><a href="admin.html">Administration</a></li>
+							<li><a href="drugs.html">Drug Administration</a></li>
+							<li><a href="orders.html">Order Management</a></li>
+							<li><a href="protocols.html">Protocols</a></li>
+							<li><a href="sop.html">Standard Operating Procedures</a></li>
+							<li><a href="storage.html">Storage Layout</a></li>
+							<li><a href="sp.html">Study & Project</a></li>
+							<li><a href="collection.html">Collection Template</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="icons">
+				<a href="profile.html"><img src="../Img/user.jpg" title="My Profile"/></a>
+				<a href="preferences.html"><img src="../Img/settings.jpg" 
+					title="Preferences" /></a>
+				<a href="index.html"><img src="../Img/logout.jpg" title="logout" /></a>
+			</div>
+		</div>
+		
+		<div class="container">
+			<h1><a href="query.html">Clinical Annototation</a> > Search</h1>
+			<br>
+			
+			<div class="container2">
+				<h2>Search Type:</h2>
+				<h3 id="choice1">Participant</h3>
+			
+				<table id="tab1">
+					<tr>
+						<th colspan="2" style="background-color:white; font-size:
+							16px; text-align:center; border-bottom: 1px solid 
+							rgb(40,40,40);">Demographics</th>
+					</tr>
+					<tr>
+						<th>Participant Identifier</th><td><input name="id"></td>
+					</tr>
+					<tr>
+						<th>Title</th>
+						<td><select name="title">
+							<option></option><option value="ms">Ms.</option>
+							<option value="mrs">Mrs.</option><option value="mr">Mr.</option>
+						</select></td>
+					</tr>
+					<tr>
+						<th>First Name</th><td><input name="first"></td>
+					</tr>
+					<tr>
+						<th>Last Name</th><td><input name="last"></td>
+					</tr>
+					<tr>
+						<th>Date of Birth</th><td><input type="date"></td>
+					</tr>
+					<tr>
+						<th>Sex</th>
+						<td><select name="sex"><option></option>
+							<option value="female">female</option>
+							<option value="male">male</option>
+						</td>
+					</tr>
+					<tr>
+						<th colspan="2" style="background-color:white; font-size:
+							16px; text-align:center; border-bottom: 1px solid 
+							rgb(40,40,40);">System Data</th>
+					</tr>
+					<tr>
+						<th>Created (into the system)</th>
+						<td><input type="date"></td>
+					</tr>
+					<tr>
+						<th>Last Modification</th><td><input type="date"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><div id="button"><ol><li>
+							<a href="#">Search</a></li></td></ol></div>
+						</td>
+					</tr>
+				</table>
+				
+				<br>
+				<h3 id="choice2">Identifiers</h3>
+				
+				<table id="tab2">
+					<tr>
+						<th>Identifier Name</th>
+						<td><input name="idName" type="search"></td>
+					</tr>
+					<tr>
+						<th>Value</th><td><input name="first" type="search"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><div id="button"><ol><li>
+							<a href="#">Search</a></li></td></ol></div>
+						</td>
+					</tr>
+				</table>
+				
+				<br>
+				<h3 id="choice3">Participant Messages</h3>
+				
+				<table id="tab3">
+					<tr>
+						<th>Type</th>
+						<td><select name="type"><option></option>
+							<option value="memo">Memo</option>
+							<option value="note">Note</option>
+							<option value="task">Task</option>
+						</select></td>
+					</tr>
+					<tr>
+						<th>Title</th><td><input name="title"></td>
+					</tr>
+					<tr>
+						<th>Date Requested/Creation Date</th>
+						<td><input type="date"></td>
+					</tr>
+					<tr>
+						<th>Due Date</th><td><input type="date"></td>
+					</tr>
+					<tr>
+						<th>Expiry Date</th><td><input type="date"></td>
+					</tr>
+					<tr>
+						<th>Done</th>
+						<td><select name="type"><option></option>
+							<option value="yes">Yes</option><option value="no">No</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td colspan="2"><div id="button"><ol><li>
+							<a href="#">Search</a></li></td></ol></div>
+						</td>
+					</tr>
+				</table>
+				<br><br>
+			</div>
+			
+			<br>
+		</div>
+		
+		<div class="footer-cont">
+			<div class="footer">
+				<p>Copyright (c) 2015 <a href="http://www.ctrnet.com">
+					Canadian Tumour Repository Network</a><br>2.6.3
+				</p>
+			</div>
+		</div>
+		
+	</body>
+</html>

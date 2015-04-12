@@ -1,0 +1,141 @@
+body {
+	background: url('../Img/gray.jpg');
+}
+
+h3 {
+	font-family: century gothic;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+p {
+	font-family: century gothic;
+	font-size: 13px;
+}
+
+pre {
+	font-size: 13px;
+	font-family: century gothic;
+}
+
+a {
+	color: #FF0066;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF8725;
+}
+
+.header {
+	background: rgb(93, 156, 200);
+    height:83px;
+    left:0;
+	width:100%;
+	top:0;
+	position: fixed;
+	z-index: 50;
+	padding: 8px;
+}
+
+.logo {
+	float: left;
+	padding-right: 15px;
+	border-right: 2px white solid;
+}
+
+.title {
+	color: white;
+	font-family: yp;
+	font-size: 37px;
+	letter-spacing: 0.5px;
+    line-height: 87px;
+    text-align: left;
+    padding-left: 15px;
+    margin-left: 250px;
+}
+
+.container {
+	margin:auto;
+	margin-top: 120px;
+	margin-bottom: 20px;
+	height: 482px;
+	width: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.display {
+	background: rgba(255, 255, 255, .6);
+	padding: 25px 65px 25px 65px;
+	margin-left: 50px;
+	height: auto;
+	width: 680px;
+	float: left;
+}
+
+.display h3 {
+	color: #FF8725;
+	letter-spacing: 0.5px;
+}
+
+.display p {
+	border-top: 2px solid rgb(40,40,40);
+	padding: 15px;
+	margin-top: -15px;
+}
+
+.ls {
+	background: rgba(255, 255, 255, .6);
+	padding: 15px 55px 15px 60px;
+	right: 50px;
+	width: 300px;
+	position: fixed;
+}
+
+.ls h3 {
+	
+}
+
+#log {
+	background-color: #91CAF3;
+	padding: 5px 10px 10px 10px;
+	margin: auto;
+	margin-top: -15px;
+	width: 280;
+	height: auto;
+	text-align: center;
+}
+
+.footer-cont {
+	background: rgb(40, 40, 40);
+	left: 0;
+	height: 50px;
+	line-height: 15px;
+	position: absolute;
+	width: 100%;
+	float: both;
+}
+
+.footer {
+	font-size: 12px;
+	margin: 0 auto;
+	width: 900px;
+	text-align: center;
+}
+
+.footer p,a {
+	color: white;
+	font-size: 11px;
+	font-family: century gothic;
+}
+
+@font-face {
+	font-family: yp;
+	src: url('../Fonts/yellow peas.ttf');
+}
+
+@font-face {
+	font-family: basic;
+	src: url('../Fonts/basictitlefont.ttf');
+}

@@ -1,0 +1,414 @@
+body {
+	background: url('../Img/gray.jpg');
+}
+
+h1 {
+	font-size: 30px;
+	font-family: yp;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FF8725;
+	letter-spacing: 0.5px;
+}
+
+h1 a {
+	font-size: 30px;
+	font-family: yp;
+	color: rgb(40,40,40);
+	
+	-webkit-transition: all 0.3s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+}
+
+h2 {
+	font-size: 22px;
+	font-family: century gothic;
+	text-transform: uppercase;
+	color: #585858;
+}
+
+h3 {
+	font-family: century gothic;
+}
+
+p {
+	font-size: 12px;
+	font-family: century gothic;
+}
+
+a {
+	color: #FF0066;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF8725;
+}
+
+ol {
+	list-style-type: none;
+}
+
+.header {
+	background: rgb(93, 156, 200);
+    height:83px;
+    left:0;
+	width:100%;
+	top:0;
+	position: fixed;
+	z-index: 50;
+	padding: 8px;
+}
+
+.logo {
+	float: left;
+	padding-right: 15px;
+	border-right: 2px white solid;
+}
+
+.title {
+	color: white;
+	font-family: yp;
+	font-size: 37px;
+	letter-spacing: 0.5px;
+    line-height: 87px;
+    text-align: left;
+    padding-left: 15px;
+    margin-left: 250px;
+}
+
+.nav{
+	background: rgb(40,40,40);
+	height: 45px;
+	left: 0;
+	top: 99px;
+	width: 100%;
+	position: fixed;
+	z-index: 49;
+}
+
+.menu {
+	margin: 0;
+	letter-spacing: 1px;
+	line-height: 25px;
+	position: relative;
+}
+
+.menu span a {
+	background-color: #585858;
+}
+
+.menu ul {
+	margin: 0;
+	margin-left: -40px;
+	list-style: none;
+}
+
+.menu li {
+	float: left;
+}
+
+.menu li a {
+	font-size: 11px;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	border-right: 1px gray solid;
+	padding: 10px;
+	display: block;
+	margin: 0px;
+	
+	opacity:0.8;
+	-webkit-transition: all 0.3s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+}
+
+.menu li a:hover {
+	color: white;
+	background-color: gray;
+	text-shadow: 0 0 1px #333;
+	
+	-webkit-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+}
+
+.menu ul li:hover a{
+	background-color: gray;
+}
+
+.menu li ul{
+	display:none;
+	height:auto;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	position:absolute;
+	width:250px;
+	z-index:200;
+}
+
+.menu li:hover ul{
+	display:block;
+}
+
+.menu li li {
+	display:block;
+	float:none;
+	margin:0px;
+	padding:0px;
+	width:210px;
+	background: rgb(40,40,40);
+}
+
+.menu li:hover li a{
+	background:none;
+}
+
+.menu li ul a{
+	display:block;
+	margin:0px;
+	padding: 10px;
+	text-align:left;
+	border: 0;
+}
+
+.menu li ul a:hover, .menu li ul li:hover a{
+	background-color: #585858;
+}
+
+.menu li li ol{
+	display: none;
+	margin-top: -45px;
+	margin-left:210px;
+	height:auto;
+	padding: 0;
+	border:0px;
+	position:absolute;
+	width:250px;
+	z-index:200;
+}
+
+.menu li li li {
+	display:block;
+	float:none;
+	padding:0px;
+	width:210px;
+}
+
+.menu li li:hover ol{
+	display:block;
+}
+
+.menu li ul ol a:hover, .menu li ul li ol li:hover a{
+	background-color: gray;
+}
+
+.icons {
+	float: right;
+	margin-right: 20px;
+	width: auto;
+}
+
+.icons img {
+	width: 35px;
+	padding: 4px;
+}
+
+.icons img:hover {
+	opacity: 0.7;
+	
+	-webkit-transition: all 0.3s ease-in-out; 
+	transition: all 0.3s ease-in-out;
+}
+
+.container {
+	text-align: center;
+	background: rgba(255, 255, 255, .6);
+	padding: 25px 65px 25px 65px;
+	margin:auto;
+	margin-top: 165px;
+	margin-bottom: 20px;
+	height: auto;
+	width: 1000px;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+
+.container img {
+	width: 14px;
+}
+
+#description {
+	margin: auto;
+	margin-top: -10px;
+	width: 750px;
+	letter-spacing: 0.5px;
+}
+
+.container2 {
+	margin: auto;
+	width: 850px;
+	background-color: white;
+	padding: 25px 65px 25px 65px;
+	text-align: left;
+}
+
+.container2 table {
+	border: 1px solid rgb(40,40,40);
+}
+
+#desc {
+	margin-top: -10px;
+	margin-left: 25px;
+}
+
+table {
+	background-color: white;
+	color: #454749;
+	font-family: century gothic;
+	padding: 20px 20px 20px 20px;
+	border-collapse: separate;
+	border-spacing: 3px;
+}
+
+th {
+	letter-spacing: 0.5px;
+	font-size: 12px;
+	font-weight: none;
+	padding: 6px;
+	text-transform: uppercase;
+}
+
+td {
+	background-color: #D7E8F5;
+	padding: 8px 8px 8px 8px;
+	font-size: 11px;
+}
+
+#headers td {
+	font-weight: bold;
+	font-size: 13px;
+	text-align: center;
+	background-color: white;
+	padding: 4px;
+}
+
+#button {
+	width: 300px;
+	margin: auto;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#button li {
+	padding: 2px;
+}
+
+#button li a {
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	background-color: #454749;
+	margin-left: -40px;
+	display: block;
+	padding: 5px;
+}
+
+#button li a:hover {
+	background-color: white;
+	
+	-webkit-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+}
+
+#button a:hover {
+	background-color: white;
+	
+	-webkit-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+}
+
+#links {
+	letter-spacing: 1px;
+	margin: auto;
+	width: 800px;
+	text-align: left;
+}
+
+#links a {
+	background-color: gray;
+	color: #F2F2F2;
+	padding: 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+	
+	-webkit-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+}
+
+#links a:hover {
+	color: #FF8725;
+	background: transparent;
+	
+	-webkit-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+}
+
+#links p {
+	padding: 5px;
+	width: 800px;
+	border-top: 1px solid rgb(40, 40, 40);
+}
+
+#adlinks {
+	margin: auto;
+	width: 500px;
+}
+
+#adlinks td {
+	background-color: white;
+	padding: 0px;
+	text-align: center;
+}
+
+#adlinks span a{
+	background-color: rgb(40, 40, 40);
+}
+
+#adlinks a {
+	display: block;
+}
+
+.footer-cont {
+	background: rgb(40, 40, 40);
+	left: 0;
+	height: 50px;
+	line-height: 15px;
+	position: absolute;
+	width: 100%;
+	float: both;
+}
+
+.footer {
+	font-size: 12px;
+	margin: 0 auto;
+	width: 900px;
+	text-align: center;
+}
+
+.footer p,a {
+	color: white;
+	font-size: 11px;
+	font-family: century gothic;
+}
+
+
+@font-face {
+	font-family: yp;
+	src: url('../Fonts/yellow peas.ttf');
+}
+
+@font-face {
+	font-family: basic;
+	src: url('../Fonts/basictitlefont.ttf');
+}
