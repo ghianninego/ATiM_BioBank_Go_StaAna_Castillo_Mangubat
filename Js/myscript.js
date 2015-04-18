@@ -6,10 +6,6 @@ function logout(){
 }
 
 $(document).ready(function(){
-	$("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
-});
-
-$(document).ready(function(){
 	$("#choice1").click(function(){
 		$("#tab1").slideToggle("slow");
 	});
