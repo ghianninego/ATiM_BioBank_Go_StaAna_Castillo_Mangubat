@@ -1,7 +1,15 @@
-<html>
+<html lang="en">
 	<head>
-		<title>Home - ATiM</title>
+		<meta charset="utf-8"> 
 		<link type="text/css" rel="stylesheet" href="../Css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="../Js/jqBootstrapValidation.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../Js/myscript.js"></script>
+		
+		<title>Home - ATiM</title>
 	</head>
 	
 	<body>
@@ -21,7 +29,11 @@
 				translational cancer research resource, funded by Canadian 
 				Institutes of Health Research, that furthers Canadian health 
 				research by linking cancer researchers with provincial tumour 
-				banks.</p><br>
+				banks.<br><br>
+				ATiM is a Biobank Information Management System (BIMS) 
+				designed and developed by CTRNet in conjunction with Canadian 
+				biobanks for the operation of biobanks. ATiM is released for 
+				free non-commercial use under GPL v3.</p><br>
 				
 				<h3>Installation</h3>
 				<p>To view your installed version number open the Administration
@@ -38,27 +50,52 @@
 			</div>
 		
 			<div class="ls">
-				<h3>LOGIN</h3>
 				<form action="profile.html">
 				<div id="log">
-					<pre>Username: &nbsp;<input name="uname"> </pre>
-					<pre>Password:  &nbsp;<input type="password" name="pword"> </pre>
-					<input type="submit" value="Login" style="text-align: center;
-						width: 80px"/>
+					<h3>LOGIN</h3>
+					<input type="text" class="form-control" id="usr" placeholder="Name">
+					<input type="password" class="form-control" id="pwd" placeholder="Password">
+					<input type="submit" value="Log In" class="btn btn-info btn-block">
 				</div>
 				</form>
 				
-				<h3>SIGN UP</h3>
+				<form action="profile.html" class="form-horizontal">
 				<div id="log">
-					<pre>Under construction!</pre>
+					<h3>SIGN UP</h3>
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<input type="email" class="form-control" id="email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<input type="password" class="form-control" name="pword" 
+								placeholder="Password" minlength="6" required>
+							<p class="help-block"></p>
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<input type="password" class="form-control" name="pword2" placeholder="Re-Enter Password"
+								data-validation-matches-match="pword" 
+								data-validation-matches-message="Must match password entered above" required>
+							<p class="help-block"></p>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-info btn-block btn-md">Register</button>
 				</div>
-				<br>
+				</form>
 			</div>
 		</div>
 		
 		<div class="footer-cont">
 			<div class="footer">
-				<p>Copyright (c) 2015 <a href="http://www.ctrnet.com">
+				<p>Copyright (c) 2015 <a href="http://www.ctrnet.ca">
 					Canadian Tumour Repository Network</a><br>2.6.3
 				</p>
 			</div>

@@ -1,9 +1,10 @@
 body {
 	background: url('../Img/gray.jpg');
+	background-attachment: fixed;
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 33px;
 	font-family: yp;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -13,7 +14,7 @@ h1 {
 }
 
 h1 a {
-	font-size: 30px;
+	font-size: 33px;
 	font-family: yp;
 	color: rgb(40,40,40);
 	
@@ -54,6 +55,7 @@ ol {
 	position: fixed;
 	z-index: 50;
 	padding: 8px;
+	opacity: 0.99;
 }
 
 .logo {
@@ -81,6 +83,7 @@ ol {
 	width: 100%;
 	position: fixed;
 	z-index: 49;
+	opacity: 0.99;
 }
 
 .menu {
@@ -148,6 +151,7 @@ ol {
 }
 
 .menu li li {
+	opacity: 1;
 	display:block;
 	float:none;
 	margin:0px;
@@ -171,6 +175,7 @@ ol {
 
 .menu li ul a:hover, .menu li ul li:hover a{
 	background-color: #585858;
+	opacity: 1;
 }
 
 
@@ -203,6 +208,8 @@ ol {
 	position: relative;
 	z-index: 1;
 	text-align: center;
+	
+	box-shadow: 8px 8px 5px rgba(144, 144, 144, 0.7);
 }
 
 .container input {
@@ -297,6 +304,9 @@ td {
 	margin-left: -40px;
 	display: block;
 	padding: 5px;
+	
+	-webkit-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
 }
 
 #button li a:hover {

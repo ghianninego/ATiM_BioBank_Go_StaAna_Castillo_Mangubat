@@ -1,3 +1,14 @@
+function logout(){
+	var x=confirm("Are you sure you want to logout?");
+	if (x) {
+		location.assign("../Html/index.html");
+	}
+}
+
+$(document).ready(function(){
+	$("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+});
+
 $(document).ready(function(){
 	$("#choice1").click(function(){
 		$("#tab1").slideToggle("slow");
