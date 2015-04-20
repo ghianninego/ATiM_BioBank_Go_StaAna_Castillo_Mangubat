@@ -1,6 +1,13 @@
 body {
 	background: url('../Img/gray.jpg');
 	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+html {
+	height: 100%;
 }
 
 h3 {
@@ -11,7 +18,7 @@ h3 {
 
 p {
 	font-family: century gothic !important;
-	font-size: 12px;
+	font-size: 13px;
 }
 
 pre {
@@ -26,6 +33,15 @@ a {
 
 a:hover {
 	color: #FF8725 !important;
+}
+
+#wrapper {
+	height: 100%
+}
+
+body > #wrapper {
+	height: auto;
+	min-height: 100%;
 }
 
 .header {
@@ -58,8 +74,8 @@ a:hover {
 
 .container {
 	margin:auto;
-	margin-top: 120px;
-	margin-bottom: 20px;
+	margin-top: 130px;
+	margin-bottom: 30px;
 	height: auto;
 	width: auto;
 	position: relative;
@@ -105,26 +121,24 @@ a:hover {
 
 .footer-cont {
 	background: rgb(40, 40, 40);
-	left: 0;
 	height: 50px;
-	line-height: 15px;
+	margin-top: -50px;
 	position: absolute;
 	width: 100%;
-	float: both;
+	clear: both;
 }
 
 .footer {
-	font-size: 12px;
 	margin: 0 auto;
+	margin-top: 8px;
 	width: 900px;
 	text-align: center;
 }
 
 .footer p,a {
 	color: white;
-	font-size: 11px;
+	font-size: 12px;
 	font-family: century gothic;
-	margin-top: 10px;
 }
 
 .control-group {
