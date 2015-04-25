@@ -73,41 +73,267 @@
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
 						<h3 class="modal-title">SIGN UP</h3>
 					</div>
-					<div class="modal-body">
-						<div class="control-group">
-							<label class="control-label" for="name">Name</label>
-							<div class="controls">
-								<input type="text" class="form-control" id="name" name="name" required>
-								<p class="help-block"></p>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="name">Email</label>
-							<div class="controls">
-								<input type="email" class="form-control" id="email" required>
-								<p class="help-block"></p>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="name">Password</label>
-							<div class="controls">
-								<input type="password" class="form-control" name="pword" minlength="6" required>
-								<p class="help-block"></p>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="name">Re-Enter Password</label>
-							<div class="controls">
-								<input type="password" class="form-control" name="pword2" data-validation-matches-match="pword" 
-								data-validation-matches-message="Must match password entered above" required>
-								<p class="help-block"></p>
+					<div class="modal-body ativa-scroll">
+						<div role="tabpanel">
+							<ul class="nav nav-tabs" role="tablist">
+								<li class="active">
+									<a data-toggle="tab" href="#tab1">As Regular User</a>
+								</li>
+								<li>
+									<a data-toggle="tab" href="#tab2">As Administrator</a>
+								</li>
+							</ul>
+							
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="tab1">
+									<div class="control-group">
+										<label class="control-label" for="name">Name</label>
+										<div class="controls line">
+											<input type="text" class="form-control" id="fname" placeholder="First">
+											<input type="text" class="form-control" id="lname" placeholder="Last">
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="name">Username</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="uname" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="email">Email</label>
+										<div class="controls">
+											<input type="email" class="form-control" id="email" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="name">Department</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="dept">
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="name">Job Title</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="job">
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="name">Institution</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="inst" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="lab">Laboratory</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="lab" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="address">Address</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="address">
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="city">City</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="city">
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="province">Province</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="province" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="country">Country</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="country" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="postal">Postal Code</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="postal" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="phone_work">Phone Work</label>
+										<div class="controls">
+											<input type="tel" class="form-control" id="phone_work" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="phone_home">Phone Home</label>
+										<div class="controls">
+											<input type="tel" class="form-control" id="phone_home" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="name">Password</label>
+										<div class="controls">
+											<input type="password" class="form-control" name="pword" minlength="6" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="name">Re-Enter Password</label>
+										<div class="controls">
+											<input type="password" class="form-control" name="pword2" data-validation-matches-match="pword" 
+											data-validation-matches-message="Must match password entered above" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-info">Register</button>
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+								
+								
+								<div role="tabpanel" class="tab-pane fade in" id="tab2">
+									<div class="control-group">
+										<label class="control-label" for="name">Name</label>
+										<div class="controls line">
+											<input type="text" class="form-control" id="fname" placeholder="First">
+											<input type="text" class="form-control" id="lname" placeholder="Last">
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="name">Username</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="uname" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="email">Email</label>
+										<div class="controls">
+											<input type="email" class="form-control" id="email" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="name">Department</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="dept">
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="name">Job Title</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="job">
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="name">Institution</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="inst" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="lab">Laboratory</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="lab" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="address">Address</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="address">
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="city">City</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="city">
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="province">Province</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="province" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="country">Country</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="country" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="postal">Postal Code</label>
+										<div class="controls">
+											<input type="text" class="form-control" id="postal" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="phone_work">Phone Work</label>
+										<div class="controls">
+											<input type="tel" class="form-control" id="phone_work" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="phone_home">Phone Home</label>
+										<div class="controls">
+											<input type="tel" class="form-control" id="phone_home" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="pword">Password</label>
+										<div class="controls">
+											<input type="password" class="form-control" name="pword" minlength="6" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="pword2">Re-Enter Password</label>
+										<div class="controls">
+											<input type="password" class="form-control" name="pword2" data-validation-matches-match="pword" 
+											data-validation-matches-message="Must match password entered above" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="code">Admin Code</label>
+										<div class="controls">
+											<input type="text" class="form-control" name="code" required>
+											<p class="help-block"></p>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-info">Register</button>
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="modal-footer">
-						<button type="submit" class="btn btn-info">Register</button>
-						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-					</div>
+					
 				</div>
 				</div>
 			</div>

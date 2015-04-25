@@ -133,7 +133,7 @@ ul.nav.navbar-nav.navbar-right{
 }
 
 .modal {
-	margin-top: 100px;
+	margin-top: 50px;
 	font-family: century gothic !important;	
 }
 
@@ -143,21 +143,58 @@ ul.nav.navbar-nav.navbar-right{
 
 .modal-body {
 	padding: 20px 40px 20px 40px !important;
+	max-height: 420px;
+    overflow-y: auto;
+}
+
+.active a {
+	color: white !important;
+	background: #3A465E !important;
+	box-shadow: 0px 0px 40px #212835 inset;
+	
+	-webkit-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+}
+
+.active a:hover {
+	-webkit-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+}
+
+.ativa-scroll {
+	padding: 0px !important; 
+}
+
+.nav-tabs > li > a {
+	font-size: 12px;
+	color: #333 !important;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.nav-tabs > li.active > a {
+	color: white !important;
+}
+
+.control-group {
+	padding: 10px 35px 0px 35px;
+	margin-bottom: 0px;
 }
 
 .control-label {
-	width: 130px;
+	width: 155px;
 	float: left;
 	text-align: right;
 }
 
 .controls {
-	margin-left: 150px;
+	margin-left: 170px;
 	width: auto;
 }
 
-.control-group {
-	margin-bottom: 0px;
+.line > .form-control {
+	display: inline !important;
+	width: 126px !important;
 }
 
 #login .modal-body {
