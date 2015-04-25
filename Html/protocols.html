@@ -1,8 +1,15 @@
-<html>
+<html lang="en">
 	<head>
-		<title>Tools > Protocols - ATiM</title>
-		<link type="text/css" rel="stylesheet" href="../Css/style2.css" />
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="../css/style2.css" />
+		<link rel="stylesheet" href="../Css/bootstrap.min.css">
+		<script src="../js/jquery-2.1.3.min.js"></script>
+		<script src="../js/jqBootstrapValidation.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="../Js/myscript.js"></script>
+		
+		<title>Tools > Protocols - ATiM</title>
 	</head>
 	
 	<body>
@@ -16,96 +23,124 @@
 			</div>
 		</div>
 		
-		<div class="nav">
-			<div class="menu">
-				<ul>
-					<li><a href="clinical.html">Clinical Annotation</a></li>
-					<li><a href="inventory.html">Inventory Management</a></li>
-					<li><a href="query.html">Query Tool +</a>
-						<ul>
-							<li><a href="browser.html">Data Browser</a></li>
-							<li><a href="sets.html">Batch Sets</a></li>
-							<li><a href="reports.html">Reports</a></li>
-						</ul>
-					</li>
-					<li><span><a href="tools.html">Tools +</a></span>
-						<ul>
-							<li><a href="admin.html">Administration</a></li>
-							<li><a href="drugs.html">Drug Administration</a></li>
-							<li><a href="orders.html">Order Management</a></li>
-							<li><a href="protocols.html">Protocols</a></li>
-							<li><a href="sop.html">Standard Operating Procedures</a></li>
-							<li><a href="storage.html">Storage Layout</a></li>
-							<li><a href="sp.html">Study & Project</a></li>
-							<li><a href="collection.html">Collection Template</a></li>
-						</ul>
-					</li>
-				</ul>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="clinical.html">Clinical Annotation</a></li>
+						<li><a href="inventory.html">Inventory Management</a></li>
+						<li class="dropdown">
+							<a href="query.html">Query Tool +</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="browser.html">Data Browser</a></li>
+								<li><a href="sets.html">Batch Sets</a></li>
+								<li><a href="reports.html">Reports</a></li>
+							</ul>
+						</li>
+						<li class="dropdown active">
+							<a href="tools.html">Tools +</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="admin.html">Administration</a></li>
+								<li><a href="drugs.html">Drug Administration</a></li>
+								<li><a href="orders.html">Order Management</a></li>
+								<li><a href="protocols.html">Protocols</a></li>
+								<li><a href="sop.html">Standard Operating Procedures</a></li>
+								<li><a href="storage.html">Storage Layout</a></li>
+								<li><a href="sp.html">Study & Project</a></li>
+								<li><a href="collection.html">Collection Template</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="profile.html">
+							<img src="../Img/user.jpg" title="My Profile"/>
+						</a></li>
+						<li><a href="preferences.html">
+							<img src="../Img/settings.jpg" title="Preferences" />
+						</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#logout">
+							<img src="../Img/logout.jpg" title="logout" />
+						</a></li>
+					</ul>
+				</div>
 			</div>
-			
-			<div class="icons">
-				<a href="profile.html"><img src="../Img/user.jpg" title="My Profile"/></a>
-				<a href="preferences.html"><img src="../Img/settings.jpg" 
-					title="Preferences" /></a>
-				<a href="#" onclick="logout()"><img src="../Img/logout.jpg" title="logout" /></a>
-			</div>
-		</div>
+		</nav>
 		
 		<div class="container">
-			<h1><span>Tools ></span> Protocols</h1>
-			<br>
+			<div class="content">
+				<h1><span>Tools ></span> Protocols</h1><br>
 			
-			<div class="container2">
-				<h2>Search Type: </h2>
-				<h3 style="width: 500px; margin: auto;">Protocols</h3>
+				<div class="container2">
+					<h2>Search Type: </h2><br>
+					<h3 style="width: 550px; margin: auto; padding-left: 30px">Protocols</h3>
 				
-				<table id="search">
-					<tr>
-						<th>Code</th>
-						<td><input name="idName" type="search"></td>
-					</tr>
-					<tr>
-						<th>Tumour Group</th><td><select name="tumour">
-							<option></option><option value="all">All</option>
-						</select></td>
-					</tr>
-					<tr>
-						<th>Type</th><td><select name="type"><option></option>
-							<option value="chemo">Chemotherapy</option>
-							<option value="surgery">Surgery</option>
-						</select></td>
-					</tr>
-					<tr>
-						<th>Name</th>
-						<td><input name="name" type="search"></td>
-					</tr>
-					<tr>
-						<td colspan="2"><div id="button">
-							<ol><li><a href="#" style="margin-left:30px; width: 150px;">
-							Search</a></li></ol></div>
-						</td>
-					</tr>
-				</table>
+					<table class="table" id="search">
+						<tbody>
+							<tr>
+								<th>Code</th>
+								<td><input name="idName" type="search"></td>
+							</tr>
+							<tr>
+								<th>Tumour Group</th><td><select name="tumour">
+									<option></option><option value="all">All</option>
+								</select></td>
+							</tr>
+							<tr>
+								<th>Type</th><td><select name="type"><option></option>
+									<option value="chemo">Chemotherapy</option>
+									<option value="surgery">Surgery</option>
+								</select></td>
+							</tr>
+							<tr>
+								<th>Name</th>
+								<td><input name="name" type="search"></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div id="button"><ol><li><a href="#">
+									<span class="glyphicon glyphicon-search"></span> Search
+									</a></li></ol></div>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			
+				<br>
+			
+				<div id="button">
+					<ol>
+						<li><a href="#">+ Add</a></li>
+					</ol>
+				</div>
 			</div>
 			
-			<br>
-			
-			<div id="button">
-				<ol>
-					<li><a href="#">+ Add</a></li>
-				</ol>
+			<form class="form-horizontal" action="index.html">
+				<div class="modal fade" id="logout" role="dialog">
+					<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="control-group">
+								<label class="control-label">Are you sure you want to log out?</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-info">Yes</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<div class="footer-cont">
+			<div class="footer">
+				<p>Copyright (c) 2015 <a href="http://www.ctrnet.ca">
+					Canadian Tumour Repository Network</a><br>2.6.3
+				</p>
 			</div>
 		</div>
-	</div>
 		
-	<div class="footer-cont">
-		<div class="footer">
-			<p>Copyright (c) 2015 <a href="http://www.ctrnet.ca">
-				Canadian Tumour Repository Network</a><br>
-				2.6.3
-			</p>
-		</div>
 	</div>
-		
 	</body>
 </html>

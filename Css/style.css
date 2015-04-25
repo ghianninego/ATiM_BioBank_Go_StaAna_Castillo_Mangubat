@@ -1,33 +1,23 @@
-body {
+html, body {
 	background: url('../Img/gray.jpg');
 	background-attachment: fixed;
 	margin: 0;
 	padding: 0;
 	height: 100%;
-}
-
-html {
-	height: 100%;
+	font-family: century gothic !important;
 }
 
 h3 {
-	font-family: century gothic !important;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
 
 p {
-	font-family: century gothic !important;
 	font-size: 13px;
-}
-
-pre {
-	font-size: 13px;
-	font-family: century gothic;
 }
 
 a {
-	color: white !important;
+	color: #D8D8D8 !important;
 	text-decoration: none !important;
 }
 
@@ -36,20 +26,16 @@ a:hover {
 }
 
 #wrapper {
-	height: 100%
-}
-
-body > #wrapper {
-	height: auto;
 	min-height: 100%;
+	position: relative;
 }
 
 .header {
 	background: rgb(93, 156, 200);
+	width: 100%;
     height:100px;
+    top:0;
     left:0;
-	width:100%;
-	top:0;
 	position: fixed;
 	z-index: 50;
 	padding: 8px;
@@ -72,24 +58,67 @@ body > #wrapper {
     margin-left: 250px;
 }
 
+.navbar {
+	top: 100px !important;
+	border: 0 !important;
+	text-transform: uppercase;
+}
+
+.navbar-inverse {
+	background: rgba(40,40,40, 0) !important;
+}
+
+.navbar a:hover {
+	color: white !important;
+}
+
+.container-fluid {
+	padding-right: 20px !important;
+}
+
+#myNavbar li a{
+	-webkit-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+}
+
+
+
+
+ul.nav.navbar-nav.navbar-right{
+	padding: 8px;
+}
+
+.navbar-inverse .btn-link {
+	background: rgb(40,40,40);
+	color: #D8D8D8 !important;
+	text-decoration: none !important;
+	-webkit-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out
+}
+
+.navbar-inverse .btn-link:hover {
+	background: rgb(40,40,40);
+	color: #3A465E !important;
+	-webkit-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out
+}
+
 .container {
 	margin:auto;
-	margin-top: 130px;
-	margin-bottom: 30px;
+	margin-top: 100px;
+	padding-bottom: 70px;
 	height: auto;
-	width: auto;
-	position: relative;
-	z-index: 1;
+	width: 90%;
+	z-index: 5;
 }
 
 .display {
 	background: rgba(255, 255, 255, .6);
 	padding: 25px 65px 25px 65px;
-	margin-left: 50px;
+	margin: auto;
+	margin-top: 40px;
 	height: auto;
-	width: 680px;
-	float: left;
-	
+	width: 1000px;
 	box-shadow: 7px 7px 5px rgba(144, 144, 144, 0.7);
 }
 
@@ -103,34 +132,62 @@ body > #wrapper {
 	padding: 15px;
 }
 
-.ls {
-	right: 100px;
-	width: 380px;
-	position: fixed;
+.modal {
+	margin-top: 100px;
+	font-family: century gothic !important;	
 }
 
-#log {
-	background: rgba(255, 255, 255, .6);
-	padding: 1px 20px 12px 20px;
-	margin: auto;
-	width: 380;
-	height: auto;
-	
-	box-shadow: 7px 7px 5px rgba(144, 144, 144, 0.7);
+.modal-dialog {
+	width: 500px !important;
+}
+
+.modal-body {
+	padding: 20px 40px 20px 40px !important;
+}
+
+.control-label {
+	width: 130px;
+	float: left;
+	text-align: right;
+}
+
+.controls {
+	margin-left: 150px;
+	width: auto;
+}
+
+.control-group {
+	margin-bottom: 0px;
+}
+
+#login .modal-body {
+	padding: 20px 60px 20px 60px !important;
+}
+
+#login .control-label {
+	width: 100px;
+}
+
+#login .controls {
+	margin-left: 120px;
+}
+
+.help-block {
+	color: #FF0040 !important;
 }
 
 .footer-cont {
 	background: rgb(40, 40, 40);
-	height: 50px;
-	margin-top: -50px;
+	height: auto;
+	padding: 8px 0px 0px 0px;
 	position: absolute;
 	width: 100%;
-	clear: both;
+	bottom: 0;
+	left: 0;
 }
 
 .footer {
-	margin: 0 auto;
-	margin-top: 8px;
+	margin: auto;
 	width: 900px;
 	text-align: center;
 }
@@ -138,15 +195,6 @@ body > #wrapper {
 .footer p,a {
 	color: white;
 	font-size: 12px;
-	font-family: century gothic;
-}
-
-.control-group {
-	margin-bottom: -10px;
-}
-
-.help-block {
-	color: #FF0040 !important;
 }
 
 @font-face {
@@ -155,6 +203,6 @@ body > #wrapper {
 }
 
 @font-face {
-	font-family: basic;
-	src: url('../Fonts/basictitlefont.ttf');
+	font-family: century gothic;
+	src: url('../Fonts/Century Gothic.ttf');
 }
