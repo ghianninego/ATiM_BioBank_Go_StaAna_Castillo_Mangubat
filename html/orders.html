@@ -1,0 +1,254 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="../css/style2.css" />
+		<link rel="stylesheet" href="../Css/bootstrap.min.css">
+		<script src="../js/jquery-2.1.3.min.js"></script>
+		<script src="../js/jqBootstrapValidation.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../Js/myscript.js"></script>
+		
+		<title>Tools > Order Management - ATiM</title>
+	</head>
+	
+	<body>
+	<div id="wrapper">
+		<div class="header">
+			<div class="logo">
+				<img src="../Img/logo_ctrnet_blue.jpg" />
+			</div>
+			<div class="title">
+				<b>ATiM - Advanced Tissue Management</b>
+			</div>
+		</div>
+		
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="clinical.html">Clinical Annotation</a></li>
+						<li ><a href="inventory.html">Inventory Management</a></li>
+						<li class="dropdown">
+							<a href="query.html">Query Tool +</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="browser.html">Data Browser</a></li>
+								<li><a href="sets.html">Batch Sets</a></li>
+								<li><a href="reports.html">Reports</a></li>
+							</ul>
+						</li>
+						<li class="dropdown active">
+							<a href="tools.html">Tools +</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="admin.html">Administration</a></li>
+								<li><a href="drugs.html">Drug Administration</a></li>
+								<li><a href="orders.html">Order Management</a></li>
+								<li><a href="protocols.html">Protocols</a></li>
+								<li><a href="sop.html">Standard Operating Procedures</a></li>
+								<li><a href="storage.html">Storage Layout</a></li>
+								<li><a href="sp.html">Study & Project</a></li>
+								<li><a href="collection.html">Collection Template</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="profile.html">
+							<img src="../Img/user.jpg" title="My Profile"/>
+						</a></li>
+						<li><a href="preferences.html">
+							<img src="../Img/settings.jpg" title="Preferences" />
+						</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#logout">
+							<img src="../Img/logout.jpg" title="logout" />
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div class="content">
+				<h1><span>Tools ></span> Order Management</h1><br>
+			
+				<div class="container2">
+					<h2>Search Type: </h2><br>
+					
+					<div role="tabpanel">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="active">
+								<a data-toggle="tab" href="#tab1">Orders</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#tab2">Order Item</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#tab3">Shipment</a>
+							</li>
+						</ul>
+						
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane fade in active" id="tab1">
+								<table class="table">
+								<tbody>
+									<tr>
+										<th>Order Number</th>
+										<td><input name="order" type="search"></td>
+									</tr>
+									<tr>
+										<th>Short Title</th>
+										<td><input name="stitle" type="search"></td>
+									</tr>
+									<tr>
+									<th>Institution</th>
+									<td><select><option></option></select></td>
+									</tr>
+									<tr>
+										<th>Contact</th>
+										<td><select><option></option></select></td>
+									</tr>
+									<tr>
+										<th>Default Study/Project</th><td><select name="default">
+											<option></option><option>PORSMABO</option>
+											<option>Study #100001 ICRRC</option>
+											<option>TT PROST</option><option>Test_SGLBB</option>
+										</select></td>
+									</tr>
+									<tr>
+										<th>Processing Status</th><td><select name="status">
+											<option></option><option>Completed</option>
+											<option>Pending</option><option>Planned</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td colspan="2"><div id="button"><ol><li>
+											<a href="#">Search</a></li></td></ol></div>
+										</td>
+									</tr>
+								</tbody>
+								</table>
+							</div>
+							
+							<div role="tabpanel" class="tab-pane fade" id="tab2">
+								<table class="table">
+								<tbody>
+									<tr>
+										<th>Barcode</th><td><input type="search"></td>
+									</tr>
+									<tr>
+										<th>Label</th><td><input type="search"></td>
+									</tr>
+									<tr>
+										<th>Date Added</th><td><input type="date"></td>
+									</tr>
+									<tr>
+										<th>Added By</th>
+										<td><select><option></option></select></td>
+									</tr>
+									<tr>
+										<th>Status</th>
+										<td><select name="status"><option></option>
+											<option>Shipped</option><option>Pending</option>
+										</select></td>
+									</tr>
+									<tr>
+										<th>Shipment Code</th><td><input name="code" type="search"></td>
+									</tr>
+									<tr>
+										<th>Shipping Date</th><td><input type="date"></td>
+									</tr>
+									<tr>
+										<th>Facility</th><td><input name="faci" type="search"></td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<div id="button"><ol><li><a href="#">
+											<span class="glyphicon glyphicon-search"></span> Search
+											</a></li></ol></div>
+										</td>
+									</tr>
+								</tbody>
+								</table>
+							</div>
+							
+							<div role="tabpanel" class="tab-pane fade" id="tab3">
+								<table class="table">
+								<tbody>
+									<tr>
+										<th colspan="2" id="main">Shipping Data</th>
+									</tr>
+									<tr>
+										<th>Shipping Date</th><td><input type="date"></td>
+									</tr>
+									<tr>
+										<th>Shipped By</th>
+										<td><select><option></option></select></td>
+									</tr>
+									<tr>
+										<th>Shipping Account Number</th><td><input type="search"></td>
+									</tr>
+									<tr>
+										<th>Tracking #</th><td><input type="search"></td>
+									</tr>
+									<tr>
+										<th colspan="2" id="main">Recipient</th>
+									</tr>
+									<tr>
+										<th>Recipient</th><td><input type="search"></td>
+									</tr>
+									<tr>
+										<th>Facility</th><td><input type="search"></td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<div id="button"><ol><li><a href="#">
+											<span class="glyphicon glyphicon-search"></span> Search
+											</a></li></ol></div>
+										</td>
+									</tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				
+					<br>
+				</div>
+				<br>
+			
+				<div id="button">
+					<ol>
+						<li><a href="#">+ Add Order</a></li>
+					</ol>
+				</div>
+			</div>
+		
+			<form class="form-horizontal" action="index.html">
+				<div class="modal fade" id="logout" role="dialog">
+					<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="control-group">
+								<label class="control-label">Are you sure you want to log out?</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-info">Yes</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<div class="footer-cont">
+			<div class="footer">
+				<p>Copyright (c) 2015 <a href="http://www.ctrnet.ca">
+					Canadian Tumour Repository Network</a><br>2.6.3
+				</p>
+			</div>
+		</div>
+		
+	</div>
+	</body>
+</html>
