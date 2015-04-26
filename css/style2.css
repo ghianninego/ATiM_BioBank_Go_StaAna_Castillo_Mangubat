@@ -58,7 +58,7 @@ ol {
     left:0;
 	position: fixed;
 	z-index: 50;
-	padding: 8px;
+	padding: 8px 0px;
 }
 
 .logo {

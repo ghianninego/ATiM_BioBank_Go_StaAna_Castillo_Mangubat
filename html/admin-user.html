@@ -1,0 +1,111 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="../css/style3.css" />
+		<link rel="stylesheet" href="../Css/bootstrap.min.css">
+		<script src="../js/jquery-2.1.3.min.js"></script>
+		<script src="../js/jqBootstrapValidation.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		
+		<title>Tools > Administration - ATiM</title>
+	</head>
+	
+	<body>
+	<div id="wrapper">
+		<div class="header">
+			<div class="logo">
+				<img src="../img/LOGO.jpg" />
+			</div>
+			<div class="title">
+				<b>ATiM - Advanced Tissue Management</b>
+			</div>
+		</div>
+		
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a style="cursor: default;">Inventory Management +</a>
+							<ul class="dropdown-menu">
+								<li><a href="inventory-user.html">Global Inventory</a></li>
+								<li><a href="inventory2-user.html">My Inventory</a></li>
+							</ul>
+						</li>
+						<li class="dropdown active">
+							<a href="tools-user.html">Tools +</a>
+							<ul class="dropdown-menu">
+								<li><a href="admin-user.html">Administration</a></li>
+								<li><a href="sop-user.html">Standard Operating Procedures</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="profile-user.html">
+							<img src="../img/user.jpg" title="My Profile"/>
+						</a></li>
+						<li><a href="preferences-user.html">
+							<img src="../img/settings.jpg" title="Preferences" />
+						</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#logout">
+							<img src="../img/logout.jpg" title="logout" />
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div class="content">
+				<h1><span>Tools ></span> Administration</h1><br>
+			
+				<div id="links">
+					<table id="adlinks">
+						<tr>
+							<td><a href="#">Groups</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">ATiM Version</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">Banks</a></td>
+						</tr>
+						<tr>
+							<td><span><a href="#">Search for Users</a></span></td>
+						</tr>
+					</table>
+					<br>
+				</div>
+			</div>
+			
+			<form class="form-horizontal" action="index.html">
+				<div class="modal fade" id="logout" role="dialog">
+					<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="control-group">
+								<label class="control-label">Are you sure you want to log out?</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-info">Yes</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<div class="footer-cont">
+			<div class="footer">
+				<p>Copyright (c) 2015 <a href="http://www.ctrnet.ca">
+					Canadian Tumour Repository Network</a><br>2.6.3
+				</p>
+			</div>
+		</div>
+		
+	</div>
+	</body>
+</html>

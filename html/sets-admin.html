@@ -1,0 +1,208 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="../css/style3.css" />
+		<link rel="stylesheet" href="../Css/bootstrap.min.css">
+		<script src="../js/jquery-2.1.3.min.js"></script>
+		<script src="../js/jqBootstrapValidation.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		
+		<title>Query Tool > Batch Sets - ATiM</title>
+	</head>
+	
+	<body>
+	<div id="wrapper">
+		<div class="header">
+			<div class="logo">
+				<img src="../img/LOGO.jpg" />
+			</div>
+			<div class="title">
+				<b>ATiM - Advanced Tissue Management</b>
+			</div>
+		</div>
+		
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="clinical-admin.html">Clinical Annotation</a></li>
+						<li><a href="inventory-admin.html">Inventory Management</a></li>
+						<li class="dropdown active">
+							<a href="query-admin.html">Query Tool +</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="browser-admin.html">Data Browser</a></li>
+								<li><a href="sets-admin.html">Batch Sets</a></li>
+								<li><a href="reports-admin.html">Reports</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="tools-admin.html">Tools +</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="admin-admin.html">Administration</a></li>
+								<li><a href="drugs-admin.html">Drug Administration</a></li>
+								<li><a href="orders-admin.html">Order Management</a></li>
+								<li><a href="protocols-admin.html">Protocols</a></li>
+								<li><a href="sop-admin.html">Standard Operating Procedures</a></li>
+								<li><a href="storage-admin.html">Storage Layout</a></li>
+								<li><a href="sp-admin.html">Study & Project</a></li>
+								<li><a href="collection-admin.html">Collection Template</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="profile-admin.html">
+							<img src="../img/user.jpg" title="My Profile"/>
+						</a></li>
+						<li><a href="preferences-admin.html">
+							<img src="../img/settings.jpg" title="Preferences" />
+						</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#logout">
+							<img src="../img/logout.jpg" title="logout" />
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div class="content">
+				<h1><span>Query Tool ></span> Batch Sets</h1><br>
+			
+				<div class="container2">
+					<h2>Temporary Batch Sets (My Batch Sets)</h2>
+					<p id="desc">Unsaved batch sets that are automatically deleted
+					when there are more than 5.</p>
+				
+					<table style="width: 100%">
+						<tr id="headers">
+							<td> </td>
+							<td>Title</td>
+							<td>Type</td>
+							<td># of Elements</td>
+							<td>Status</td>
+							<td>Created By</td>
+							<td>Created</td>
+							<td>Locked</td>
+						</tr>
+						<tr>
+							<td colspan="8" style="font-style:italic; text-align: center;">
+								No data available
+							</td>
+						</tr>
+					</table>
+				
+					<br>
+					<h2>Saved batch sets (My Batch Sets)</h2>
+				
+					<table style="width: 100%">
+						<tr id="headers">
+							<td> </td>
+							<td>Title</td>
+							<td>Type</td>
+							<td># of Elements</td>
+							<td>Status</td>
+							<td>Created By</td>
+							<td>Created</td>
+							<td>Locked</td>
+						</tr>
+						<tr>
+							<td id="ticon">
+								<a href="#"><img src="../Img/info.jpg" title="details"/></a>
+								<a href="#"><img src="../Img/edit.jpg" title="edit"/></a>
+								<a href="#"><img src="../Img/delete.jpg" title="delete"/></a>
+							</td>
+							<td>ZAP 70 for ABC Study</td>
+							<td>Aliquots</td>
+							<td>6</td>
+							<td>Share with the Group</td>
+							<td>John Doe</td>
+							<td>2014-10-21 15:15:30</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td id="ticon">
+								<a href="#"><img src="../Img/info.jpg" title="details"/></a>
+								<a href="#"><img src="../Img/edit.jpg" title="edit"/></a>
+								<a href="#"><img src="../Img/delete.jpg" title="delete"/></a>
+							</td>
+							<td>2014-08-25 9:37</td>
+							<td>Samples</td>
+							<td>1</td>
+							<td>Private</td>
+							<td>John Doe</td>
+							<td>2014-08-25 09:37:48</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td id="ticon">
+								<a href="#"><img src="../Img/info.jpg" title="details"/></a>
+								<a href="#"><img src="../Img/edit.jpg" title="edit"/></a>
+								<a href="#"><img src="../Img/delete.jpg" title="delete"/></a>
+							</td>
+							<td>2014-08-08 11:50</td>
+							<td>Samples</td>
+							<td>5</td>
+							<td>Private</td>
+							<td>John Doe</td>
+							<td>2014-08-08 11:50:30</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td id="ticon">
+								<a href="#"><img src="../Img/info.jpg" title="details"/></a>
+								<a href="#"><img src="../Img/edit.jpg" title="edit"/></a>
+								<a href="#"><img src="../Img/delete.jpg" title="delete"/></a>
+							</td>
+							<td>2014-07-11 10:26</td>
+							<td>Collections</td>
+							<td>4</td>
+							<td>Private</td>
+							<td>John Doe</td>
+							<td>2014-07-11 10:26:49</td>
+							<td>-</td>
+						</tr>
+					</table>
+					<br>
+					<p style="text-align: center;">1-4 of 4</p><br>		
+					
+					<div id="button">
+						<ol>
+							<li><a href="#">Delete in Batch</a></li>
+							<li><a href="#">Filter</a></li>
+						</ol>
+					</div>
+				</div>
+			<br>
+			</div>
+		
+			<form class="form-horizontal" action="index.html">
+				<div class="modal fade" id="logout" role="dialog">
+					<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="control-group">
+								<label class="control-label">Are you sure you want to log out?</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-info">Yes</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<div class="footer-cont">
+			<div class="footer">
+				<p>Copyright (c) 2015 <a href="http://www.ctrnet.ca">
+					Canadian Tumour Repository Network</a><br>2.6.3
+				</p>
+			</div>
+		</div>
+		
+	</div>
+	</body>
+</html>
