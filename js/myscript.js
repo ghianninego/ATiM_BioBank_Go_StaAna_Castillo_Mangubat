@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+	$('#README').modal('show');
 });
 
 $('myTab a').click(function(e) {
