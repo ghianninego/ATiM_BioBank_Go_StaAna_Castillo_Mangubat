@@ -1,5 +1,5 @@
 html, body {
-	background: url('../Img/gray.jpg');
+	background: url('../img/gray.jpg');
 	background-attachment: fixed;
 	margin: 0;
 	padding: 0;
@@ -112,8 +112,8 @@ ul.nav.navbar-nav.navbar-right{
 
 .container {
 	margin:auto;
-	margin-top: 100px;
-	padding-bottom: 70px;
+	margin-top: 95px;
+	padding-bottom: 110px;
 	height: auto;
 	width: 90%;
 	z-index: 5;
@@ -121,7 +121,7 @@ ul.nav.navbar-nav.navbar-right{
 
 .display {
 	background: rgba(255, 255, 255, .6);
-	padding: 25px 65px 25px 65px;
+	padding: 25px 65px 25px 90px;
 	margin: auto;
 	margin-top: 40px;
 	height: auto;
@@ -241,12 +241,17 @@ ul.nav.navbar-nav.navbar-right{
 	font-size: 12px;
 }
 
+.footer span {
+	font-style: italic;
+	color: #A4A4A4;
+}
+
 @font-face {
 	font-family: yp;
-	src: url('../Fonts/yellow peas.ttf');
+	src: url('../fonts/yellow peas.ttf');
 }
 
 @font-face {
 	font-family: century gothic;
-	src: url('../Fonts/Century Gothic.ttf');
+	src: url('../fonts/Century Gothic.ttf');
 }
