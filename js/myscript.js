@@ -14,10 +14,10 @@ $(function(){
     	var passVal = document.getElementById("pwd").value;
         
     	if (nameVal == "user" && passVal== "user") {
-    		window.location = 'html/profile-user.html';
+    		window.location = 'jsp/profile-user.jsp';
 		}
     	else if (nameVal == "admin" && passVal== "admin") {
-    		window.location = 'html/profile-admin.html';
+    		window.location = 'jsp/profile-admin.jsp';
     	}
     });
 
@@ -26,10 +26,10 @@ $(function(){
     	var passVal = document.getElementById("pwd").value;
         
     	if (nameVal == "user" && passVal== "user") {
-    		window.location = '../html/profile-user.html';
+    		window.location = '../jsp/profile-user.jsp';
 		}
     	else if (nameVal == "admin" && passVal== "admin") {
-    		window.location = '../html/profile-admin.html';
+    		window.location = '../jsp/profile-admin.jsp';
     	}
     });
 
